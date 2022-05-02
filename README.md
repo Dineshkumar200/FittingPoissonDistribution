@@ -70,5 +70,6 @@ else:
 
 
 # Result:
+Thus, the program to fit poisson distribution is implemented
 
  
