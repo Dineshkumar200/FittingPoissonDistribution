@@ -24,7 +24,7 @@ The Poisson distribution is the discrete probability distribution of the number 
 3. The rate of occurrence is constant.
 4. The probability of an event occurring is proportional to the length of the time period. 
  
-# Procedure :
+# <br/><br/><br/><br/><br/>Procedure :
 
 ![image](https://user-images.githubusercontent.com/104613195/166251988-d0c53205-6080-4f7b-ae4c-398178586637.png)
 
@@ -34,8 +34,6 @@ The Poisson distribution is the discrete probability distribution of the number 
 # Register Number:212220230013
 ```
 ```python
-
-
 
 import numpy as np
 import math
@@ -48,11 +46,14 @@ mean=np.inner(X,f)/N
 Prob=list(); E=list(); xi=list()
 print("  X P(X=x) Obs.Fr  Ex.Fre   xi ")
 print("----------------------------------")
+
+
 for x in range(7):
     Prob.append(math.exp(-mean)*mean**x/math.factorial(x))
     E.append(Prob[x]*N)
     xi.append((f[x]-E[x])**2/E[x])
     print("%2.2f %2.2f  %4.2f   %3.2f   %3.2f"%(x,Prob[x],f[x],E[x],xi[x]))
+    
 print("----------------------------------")
 cal_chi2=np.sum(xi)
 print("Calculated value of Chi square is %4.2f"%cal_chi2)
@@ -72,7 +73,7 @@ else:
 ![TRGEY](https://user-images.githubusercontent.com/75235789/168960162-9aa581ee-7031-43e7-80c6-7311da8e8191.png)
 
 
-# Result:
+# <br/><br/><br/><br/>Result:
 Thus, the program to fit poisson distribution is implemented
 
  
